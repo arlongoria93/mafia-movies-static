@@ -1,3 +1,1 @@
-const buttonClick = () => {
-  document.getElementById("moviejs").innerHTML = "worked";
-};
+import MOVIE_DATA from "./MOVIE_DATA/MOVIE_DATA";
