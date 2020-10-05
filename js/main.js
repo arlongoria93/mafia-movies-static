@@ -1,5 +1,5 @@
 import MOVIE_DATA from "./MOVIE_DATA/MOVIE_DATA.js";
-let mainContainer = document.getElementById("main-container");
+let mainContainer = document.getElementById("/movie/");
 
 //MOVIE_DATA decpnstruction
 const goodfellasData = MOVIE_DATA[0];
