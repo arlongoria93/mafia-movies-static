@@ -19,7 +19,8 @@ function goodfellasInit() {
     const plot = response.Plot;
     const imdb = response.imdbRating;
     const rTomatoes = response.Ratings[1].Value;
-    contentData(title, year, poster, plot, imdb, rTomatoes);
+    let rank = 1;
+    contentData(title, year, poster, plot, imdb, rTomatoes, rank);
   }
   getGoodfellas();
 }
@@ -39,7 +40,8 @@ function onceUponATimeInit() {
     const plot = response.Plot;
     const imdb = response.imdbRating;
     const rTomatoes = response.Ratings[1].Value;
-    contentData(title, year, poster, plot, imdb, rTomatoes);
+    const rank = 2;
+    contentData(title, year, poster, plot, imdb, rTomatoes, rank);
   }
   getOnceUponATime();
 }
@@ -59,6 +61,7 @@ function theGodfatherInit() {
     const poster = response.Poster;
     const plot = response.Plot;
     const imdb = response.imdbRating;
+    const rank = 3;
     let rTomatoes;
     try {
       rTomatoes = response.Ratings[1].Value;
@@ -66,7 +69,7 @@ function theGodfatherInit() {
     } catch (error) {
       console.error(error);
     }
-    contentData(title, year, poster, plot, imdb, rTomatoes);
+    contentData(title, year, poster, plot, imdb, rTomatoes, rank);
   }
   getGodfather();
 }
@@ -86,7 +89,8 @@ function theGodfatherTwoInit() {
     const plot = response.Plot;
     const imdb = response.imdbRating;
     const rTomatoes = response.Ratings[1].Value;
-    contentData(title, year, poster, plot, imdb, rTomatoes);
+    const rank = 4;
+    contentData(title, year, poster, plot, imdb, rTomatoes, rank);
   }
   getGodfatherII();
 }
@@ -106,7 +110,9 @@ function pulpFictionInit() {
     const plot = response.Plot;
     const imdb = response.imdbRating;
     const rTomatoes = response.Ratings[1].Value;
-    contentData(title, year, poster, plot, imdb, rTomatoes);
+    const rank = 5;
+
+    contentData(title, year, poster, plot, imdb, rTomatoes, rank);
   }
   getPulpFiction();
 }
@@ -126,7 +132,8 @@ function theDepartedInit() {
     const plot = response.Plot;
     const imdb = response.imdbRating;
     const rTomatoes = response.Ratings[1].Value;
-    contentData(title, year, poster, plot, imdb, rTomatoes);
+    const rank = 6;
+    contentData(title, year, poster, plot, imdb, rTomatoes, rank);
   }
   getDeparted();
 }
