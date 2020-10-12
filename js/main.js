@@ -10,7 +10,7 @@ $(function () {
 function goodfellasInit() {
   async function getGoodfellas() {
     const data = await fetch(
-      "http://omdbapi.com/?apikey=342fdf1c&t=Goodfellas"
+      "https://omdbapi.com/?apikey=342fdf1c&t=Goodfellas"
     );
     const response = await data.json();
     const title = response.Title;
@@ -30,7 +30,7 @@ goodfellas.onclick = goodfellasInit;
 function onceUponATimeInit() {
   async function getOnceUponATime() {
     const data = await fetch(
-      "http://omdbapi.com/?apikey=342fdf1c&t=once+upon+a+time+in+america"
+      "https://omdbapi.com/?apikey=342fdf1c&t=once+upon+a+time+in+america"
     );
     const response = await data.json();
     const title = response.Title;
@@ -51,7 +51,7 @@ ouatia.onclick = onceUponATimeInit;
 function theGodfatherInit() {
   async function getGodfather() {
     const data = await fetch(
-      "http://www.omdbapi.com/?apikey=342fdf1c&t==the+godfather"
+      "https://www.omdbapi.com/?apikey=342fdf1c&t==the+godfather"
     );
     const response = await data.json();
     const title = response.Title;
@@ -77,7 +77,7 @@ godfather.onclick = theGodfatherInit;
 function theGodfatherTwoInit() {
   async function getGodfatherII() {
     const data = await fetch(
-      "http://omdbapi.com/?apikey=342fdf1c&t=The+Godfather%3A+Part+II"
+      "https://omdbapi.com/?apikey=342fdf1c&t=The+Godfather%3A+Part+II"
     );
     const response = await data.json();
     const title = response.Title;
@@ -97,7 +97,7 @@ godfather2.onclick = theGodfatherTwoInit;
 function pulpFictionInit() {
   async function getPulpFiction() {
     const data = await fetch(
-      "http://omdbapi.com/?apikey=342fdf1c&t=pulp+fiction"
+      "https://omdbapi.com/?apikey=342fdf1c&t=pulp+fiction"
     );
     const response = await data.json();
     const title = response.Title;
@@ -117,7 +117,7 @@ pulpfiction.onclick = pulpFictionInit;
 function theDepartedInit() {
   async function getDeparted() {
     const data = await fetch(
-      "http://omdbapi.com/?apikey=342fdf1c&t=the+departed"
+      "https://omdbapi.com/?apikey=342fdf1c&t=the+departed"
     );
     const response = await data.json();
     const title = response.Title;
